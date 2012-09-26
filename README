@@ -1,0 +1,21 @@
+This toy program in Java is a useful teaching example. It's sufficiently 
+complex that it will pose problems for students who have never worked with
+code written by others. There some inheritance, use of exception classes, 
+and some design patterns. Some jUnit 3 test classes are included.
+
+The program is meant to emulate a self-check out device, such as those 
+in grocery stories and other retailers. This one in particular was modeled
+after the one in an Alberton's store. Ones in Home Depot are similar.
+
+The App package contains the back end for the system. To keep things simple, 
+there is no external DBMS. Instead, a set of utilities have been created to
+fake a DBMS.
+
+The GUI package is provided for convenience. It is not meant to be a user 
+interface for the customers. Instead, it is a means for students to interact
+with the system and to provide starting points for reading the code. As 
+another simplification, I didn't want students to get caught up in making a
+beautiful UI.
+
+The Devices package is meant to be a Facade for APIs for the I/O devices
+in a self-check out. Right now, they are just mock ups.
